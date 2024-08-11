@@ -1,0 +1,49 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #2d2d2d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#container {
+    position: relative;
+    overflow: hidden;
+    padding: 5px;
+    border-radius: 6px;
+}
+
+#followBtn {
+    font-size: 32px;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: white;
+    color: #2d2d2d;
+    cursor: pointer;
+}
+
+.animated-border {
+    width: 250%;
+    height: 350%;
+    position: absolute;
+    z-index: -10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: conic-gradient(transparent, transparent, transparent, red, orange, transparent, transparent, transparent);
+    animation: rotate 5s infinite linear;
+}
+
+@keyframes rotate {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
