@@ -66,18 +66,6 @@ a:hover {
 }
 /* ensures overflowing text is hidden with an ellipsis ... */
 
-a {
-    text-decoration: none;
-    color: #007bff;
-}
-/* consistent look for all links */
-
-a:hover {
-    text-decoration: underline;
-    transition: transform 0.3s ease;
-}
-/* On hover underlines */
-
 .boxdepth {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
